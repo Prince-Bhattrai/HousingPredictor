@@ -26,7 +26,7 @@ function App() {
 
     try {
       setLoading(true)
-      const response = await axios.post("http://localhost:8000/predict", {
+      const response = await axios.post("https://housingpredictorbackend.onrender.com/predict", {
         area: Number(area),
         bedrooms: Number(bedrooms),
         parking: Number(parking),
