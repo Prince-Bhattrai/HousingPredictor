@@ -106,7 +106,7 @@ function App() {
               <option value="yes">yes</option>
             </select>
 
-            <button type="submit">{loading?"Loading":"Predict"}</button>
+            <button type="submit">{loading?"Predicting...":"Predict"}</button>
           </form>
 
         </div>
