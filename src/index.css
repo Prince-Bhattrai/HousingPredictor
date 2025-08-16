@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  background-color: #000000;
+  color: #8a7d7d;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 30px;
+  gap: 40px;
+
+
+
+
+
+}
+
+.outer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow-y: scroll;
+
+
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+
+.result {
+  position: fixed;
+  top: 40vh;
+
+  height: 200px;
+  background-color:#1a1919;
+  width: 320px;
+  border-radius: 10px;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.right {
+  width: 60%;
+
+}
+
+.left {
+  width: 50%;
+}
+
+.left img {
+  width: 95%;
+  border-radius: 20px;
+  height: 420px;
+  object-fit: cover;
+  user-select: none;
+  pointer-events: none;
+}
+
+form {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  /* border: 1px solid #444; */
+  border-radius: 20px;
+  width: 50%;
+  box-shadow: inset 0 0 0.5px 1px hsla(0, 0%,
+      100%, 0.075),
+    /* shadow ring 👇 */
+    0 0 0 1px hsla(0, 5%, 43%, 0.05),
+    /* multiple soft shadows 👇 */
+    0 0.3px 0.4px hsla(0, 2%, 25%, 0.02),
+    0 0.9px 1.5px hsla(0, 6%, 41%, 0.045),
+    0 3.5px 6px hsla(0, 8%, 38%, 0.09);
+
+
+}
+
+form input {
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #0e0d0d;
+  color: white;
+  border: 1px solid #101720;
+
+
+
+}
+
+form input:focus,
+form select:focus {
+  border: 1px solid rgb(49, 25, 21);
+  outline: none;
+}
+
+
+form select {
+  width: 100%;
+  z-index: 2;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #0e0d0d;
+  color: #7a7676;
+  border: 0.2px solid #131e2b;
+
+}
+
+form select option {
+  z-index: 2;
+}
+
+form button {
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: #4985ca;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+form button:hover {
+  background-color: #1169ce;
+  transform: translateY(-1px);
+}
+
+@media(max-width:1000px) {
+  .container {
+    flex-direction: column;
+
+  }
+
+  .right {
+    width: 100%;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  .left {
+    width: 100%;
+  }
+
+  .container {
+    padding: 40px;
+  }
+
+}
+
+.none {
+  display: none;
+}
+
+.hedaing img {
+  width: 30px;
+  cursor: pointer;
+
+}
+
+.hedaing {
+  display: flex;
+  font-size: 18px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.result h1 {
+  margin-top: 20%;
+  text-align: center;
+}
